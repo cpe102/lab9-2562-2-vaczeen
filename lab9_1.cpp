@@ -15,22 +15,22 @@ int main(){
 			break;
 		}
 		if(grade=="A"){ // if grade is A
-			count[0]+=count[0]+1;
+			count[0]=count[0]+1;
 			i++;
 			//Do something 
 		}else if(grade=="B"){
-		    count[1]+=count[1]+1;
+		    count[1]=count[1]+1;
 			i++;
 			// if grade is B
 			//Do something
 		}else if(grade=="C"){
-			count[2]+=count[2]+1;
+			count[2]=count[2]+1;
 			i++;
 		}else if(grade=="D"){
-			count[3]+=count[3]+1;
+			count[3]=count[3]+1;
 			i++;
 		}else if(grade=="F"){
-			count[4]+=count[4]+1;
+			count[4]=count[4]+1;
 			i++;
     	//and so on ... for grade = C, D, F	
 		}else{ // grade is wrong input
@@ -42,7 +42,7 @@ int main(){
 	}while(1);
 
 	
-	cout << "In total "<<count[0]+count[1]+count[2]+count[3]+count[4]<<" students."<<"\n";
+	cout << "In total "<<i-1<<" students."<<"\n";
 	cout << "A = " << count[0] <<",";
 	cout << "B = " << count[1] <<",";	
 	cout << "C = " << count[2] <<",";
